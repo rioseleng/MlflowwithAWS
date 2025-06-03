@@ -5,7 +5,7 @@
 1. Login to AWS console.
 2. Create IAM user with AdministratorAccess
 3. Export the credentials in your AWS CLI by running "aws configure"
-4. Create a s3 bucket
+4. Create a s3 bucketgit 
 5. Create EC2 machine (Ubuntu) & add Security groups 5000 port
 
 Run the following command on EC2 machine
@@ -41,5 +41,5 @@ mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflowtracking1
 #open Public IPv4 DNS to the port 5000
 
 
-#set uri in your local terminal and in your code 
-export MLFLOW_TRACKING_URI=http://ec2-54-158-152-207.compute-1.amazonaws.com:5000/
+#set uri in your code 
+export MLFLOW_TRACKING_URI=http://ec2-47-129-4-179.ap-southeast-1.compute.amazonaws.com:5000/ ##See app.py line 18
